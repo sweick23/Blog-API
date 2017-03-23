@@ -32,8 +32,8 @@ router.post('/', jsonParser, (req,res) => {
     const requiredFields = ["title", "content", "author"];
     for (let i = 0; i < requiredFields.length; i++){
         const fields = requiredFields[i];
-        if(!(field in req.body)){
-            const message = `Missing \`${field}\` in request body`
+        if(!(fields in req.body)){
+            const message = `Missing \`${fields}\` in request body`
             console.error(message);
             return res.status(400).send(message);
 
@@ -45,8 +45,8 @@ router.post('/', jsonParser, (req,res) => {
 
 router.put('/:id', jsonParser, (req, res)=> {
 const requireFields = ["id","title", "content", "author", "publishDate"];
-for (let i = 0; i < requiredFields.length; i++){
-    const field = requiredField[i];
+for (let i = 0; i < requireFields.length; i++){
+    const field = requireFields[i];
     if(!(field in req.body)){
         const message =  `Missing \`${field}\` in request body`
         console.error(message);
