@@ -1,2 +1,9 @@
 language: node_js
 node_js: node
+deploy:
+  provider: heroku
+  api_key:
+    secure: vPFzcmNcamonEo9/wrjbwoh9pl+hMS+6hpzaZqk4k+4wlvk/Nwa3Re6nOHU88FXVsARzhHSQITSyzgNg4m+97Cf4zhQCXMeC/TvnMnJCqN6cYVVP/hvNTIH90TXPmh/Opz4SJzUHP7eVXV3/fntdb7THI46yAALkY8px9EZt3yL2tbkU6PzHmb2wuKWfusAhW1kqeNWcFOy19M6Lyjtct9R9A1RSbJt6LOKo2tn6YciOL5hWxHAn7ZqkgZTIjCnFX6PaMu29pBu9wjiOWeOx1iGhHU0XnJS+SMhkti7FbFCORlgBO5QH0qrogzsPTiMBfW5wdu55awBqOoyT/aSAATFsDGNbBXNhflzOteVNfLWPX6opVbYbj4Cxlgxy7MOj1fdiD4c8ypITEHEQoU3pbxk2DR5Ky1nyaak4ExdCpHKDL2nd9cy+ysTfbJBujvGAKRu7CU7BglGXuVfnazIYX/CWEeohi8oEqJgR6clOlDaLmWi7gbF//t7SNoHW0I1HLO3nve473txcUbnoBAUbJx+MAFqXY7oS8uoJXhWvrwInWdGzm9bBACgEWbzKpWpchWGIlD4ZMgZ1XnVEB6kySQx6uhU5oEZNwsPMzHe+5QVxmg+l4EwtrDM7ZvHK6WXROOI6LBV2taoVKVC8mpehFs7PGRk5F6V+RgqDeVk75mI=
+  app: blueberry-tart-60923
+  on:
+    repo: sweick23/Blog-API
